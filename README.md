@@ -17,13 +17,17 @@ O Pandas é usado apenas para leitura, filtragem e preparação do CSV.
 
 ## Como executar
 1. No Google Colab, adicione o zip do projeto e execute o codigo >>
-    !unzip -o prf-inferencia-logica.zip
-    %cd prf-inferencia-logica
+
+    !unzip -o <nome_do_arquivo.zip>
+
+    %cd <nome_do_arquivo>
 
 2. Baixe o CSV **Acidentes 2025 (Agrupados por ocorrência)** em
    [Dados Abertos da PRF](https://www.gov.br/prf/pt-br/acesso-a-informacao/dados-abertos/dados-abertos-da-prf)
    e salve em `data/datatran2025.csv`
 
 3. Use para executar o código completo >>
+
    !pip install -q -r requirements.txt
+   
    !python main.py --csv data/datatran2025.csv
